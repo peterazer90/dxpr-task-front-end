@@ -1,0 +1,106 @@
+/* start of default CSS Style ********************************************************************/
+body, section, label, h1, h2, h3, h4, h5, h6, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    background-color: #fafafa;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* end of default CSS Style *********************************************************************/
+
+.container {
+    max-width: 1024px;
+    text-align: center;
+    margin: 0 auto;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.h1 {
+    font-size: large;
+}
+
+.h2 {
+    font-weight: bolder;
+    font-size: xx-large;
+}
+
+.h4 {
+    font-size: medium;
+}
+
+.h5 {
+    font-size: small;
+}
+
+.avatars {
+    margin-left: 20px;
+}
+
+.avatars img {
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    margin-left: -10px;
+    box-shadow: -2px 0 6px #00000766;
+}
+
+.separator {
+    height: 30px;
+    margin: 0 15px;
+    border: none;
+    border-left: 1px solid #dcdcdc;
+}
+
+.button {
+    background-color: #716ff2;
+    color: #fff;
+    border-radius: 100px;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(113, 111, 242, 0.77);
+}
+
+/* start of multiple CSS style for same properties *****************/
+.h1, .h2, .button, .row {
+    margin-bottom: 20px;
+}
+
+.h1, .h5 {
+    font-weight: lighter;
+    color: #7d7d7d;
+}
+
+.row, .container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container, .button {
+    text-transform: capitalize;
+    padding: 15px;
+}
+
+/* end of multiple CSS style for same properties *****************/
+
+/* start of Mobile Size style ************************************/
+@media only screen and (max-width: 560px) {
+    .avatars {
+        width: 100%;
+    }
+
+    .separator {
+        display: none;
+    }
+}
+
+/* end of Mobile Size style *************************************/

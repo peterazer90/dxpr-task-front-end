@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dropdown</title>
+    <meta name="description" content="This is Dropdown Select"/>
+    <meta name="viewport" content="width=device-width"/>
+    <link href="assets/css/app.css" type="text/css" rel="stylesheet" media="all"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+<section class="container">
+    <form class="row" action="" method="">
+        <label class="col-6">
+            <select class="dropdown" name="province" onchange="onSelectChange(event)">
+                <option value="">Choose Province</option>
+                <option value="drenthe">Drenthe</option>
+                <option value="friesland">Friesland</option>
+                <option value="gelderland">Gelderland</option>
+                <option value="limburg">Limburg</option>
+            </select>
+        </label>
+        <label class="col-6">
+            <select id="cities-dropdown" class="dropdown" disabled name="cities-dropdown" onchange="">
+                <option value="">Choose City</option>
+            </select>
+        </label>
+    </form>
+</section>
+<script src="assets/js/app.js"></script>
+</body>
+</html>
