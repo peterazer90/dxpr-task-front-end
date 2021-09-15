@@ -12,9 +12,9 @@
 </head>
 <body>
 <section class="container">
-    <form class="row" action="" method="">
+    <form class="row">
         <label class="col-6">
-            <select class="dropdown" name="province" onchange="onSelectChange(event)">
+            <select id="province-dropdown"  class="dropdown" name="province">
                 <option value="">Choose Province</option>
                 <option value="drenthe">Drenthe</option>
                 <option value="friesland">Friesland</option>
@@ -23,11 +23,12 @@
             </select>
         </label>
         <label class="col-6">
-            <select id="cities-dropdown" class="dropdown" disabled name="cities-dropdown" onchange="">
+            <select id="cities-dropdown" class="dropdown" disabled name="cities-dropdown">
                 <option value="">Choose City</option>
             </select>
         </label>
     </form>
+
 </section>
 <script src="assets/js/app.js"></script>
 </body>
